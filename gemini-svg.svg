@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 680" width="100%" height="100%" style="background-color: #ffffff; font-family: 'Segoe UI', Arial, sans-serif;">
+  <defs>
+    <!-- Styles for nodes -->
+    <style>
+      .entity-rect { fill: #337ab7; stroke: #23527c; stroke-width: 1.5; }
+      .entity-text { fill: #ffffff; font-size: 15px; font-weight: bold; text-anchor: middle; dominant-baseline: middle; }
+      
+      .rel-diamond { fill: #337ab7; stroke: #23527c; stroke-width: 1.5; }
+      .rel-text { fill: #ffffff; font-size: 13px; font-weight: bold; text-anchor: middle; dominant-baseline: middle; }
+      
+      .attr-ellipse-blue { fill: #5b9bd5; stroke: #41719c; stroke-width: 1.5; }
+      .attr-text-white { fill: #ffffff; font-size: 12px; font-weight: 500; text-anchor: middle; dominant-baseline: middle; }
+      
+      .attr-ellipse-orange { fill: #fff2cc; stroke: #d6b656; stroke-width: 1.5; }
+      .attr-text-orange { fill: #594300; font-size: 12px; font-weight: 600; text-anchor: middle; dominant-baseline: middle; }
+      
+      .link-line { stroke: #5b9bd5; stroke-width: 1.5; fill: none; }
+      .cardinality { fill: #23527c; font-size: 12px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- ================= LINES (CONNECTORS) ================= -->
+  
+  <!-- ĐV KHÁCH and its attributes -->
+  <line x1="360" y1="130" x2="260" y2="120" class="link-line" />
+  <line x1="360" y1="130" x2="330" y2="60" class="link-line" />
+  <line x1="420" y1="130" x2="430" y2="80" class="link-line" />
+  <line x1="360" y1="150" x2="250" y2="215" class="link-line" />
+
+  <!-- ĐV KHÁCH to Thuoc 1 & Thuoc 2 -->
+  <line x1="360" y1="160" x2="220" y2="290" class="link-line" />
+  <line x1="440" y1="160" x2="520" y2="290" class="link-line" />
+
+  <!-- Thuoc 1 to NGƯỜI ĐẶT -->
+  <line x1="220" y1="310" x2="220" y2="380" class="link-line" />
+  
+  <!-- Thuoc 2 to NGƯỜI NHẬN -->
+  <line x1="520" y1="310" x2="520" y2="380" class="link-line" />
+
+  <!-- NGƯỜI ĐẶT attributes -->
+  <line x1="170" y1="385" x2="100" y2="360" class="link-line" />
+  <line x1="170" y1="410" x2="100" y2="445" class="link-line" />
+
+  <!-- NGƯỜI ĐẶT to ĐẶT -->
+  <line x1="220" y1="420" x2="220" y2="480" class="link-line" />
+
+  <!-- ĐẶT to HÀNG -->
+  <line x1="220" y1="520" x2="220" y2="580" class="link-line" />
+
+  <!-- ĐẶT attributes -->
+  <line x1="190" y1="500" x2="160" y2="500" class="link-line" />
+  <line x1="240" y1="490" x2="280" y2="480" class="link-line" />
+  <line x1="240" y1="510" x2="280" y2="520" class="link-line" />
+
+  <!-- HÀNG attributes -->
+  <line x1="170" y1="585" x2="120" y2="540" class="link-line" />
+  <line x1="170" y1="600" x2="110" y2="600" class="link-line" />
+  <line x1="180" y1="615" x2="120" y2="660" class="link-line" />
+  <line x1="220" y1="620" x2="150" y2="700" class="link-line" />
+
+  <!-- GIAO connections (Quaternary relation) -->
+  <!-- Giao to HÀNG -->
+  <line x1="430" y1="535" x2="270" y2="590" class="link-line" />
+  <!-- Giao to NGƯỜI NHẬN -->
+  <line x1="440" y1="515" x2="500" y2="420" class="link-line" />
+  <!-- Giao to NGƯỜI GIAO -->
+  <line x1="440" y1="545" x2="430" y2="640" class="link-line" />
+  <!-- Giao to NƠI GIAO -->
+  <line x1="475" y1="530" x2="560" y2="570" class="link-line" />
+
+  <!-- GIAO attributes -->
+  <line x1="440" y1="515" x2="420" y2="460" class="link-line" />
+  <line x1="420" y1="520" x2="370" y2="480" class="link-line" />
+  <line x1="465" y1="520" x2="510" y2="495" class="link-line" />
+  <line x1="420" y1="540" x2="380" y2="560" class="link-line" />
+
+  <!-- NGƯỜI NHẬN attributes -->
+  <line x1="570" y1="390" x2="630" y2="350" class="link-line" />
+  <line x1="570" y1="410" x2="650" y2="415" class="link-line" />
+
+  <!-- NƠI GIAO attributes -->
+  <line x1="610" y1="565" x2="635" y2="520" class="link-line" />
+  <line x1="610" y1="595" x2="600" y2="650" class="link-line" />
+
+  <!-- NGƯỜI GIAO attributes -->
+  <line x1="380" y1="660" x2="300" y2="670" class="link-line" />
+  <line x1="440" y1="675" x2="420" y2="720" class="link-line" />
+
+  <!-- ================= ENTITIES (RECTANGLES) ================= -->
+  
+  <!-- ĐV KHÁCH -->
+  <rect x="340" y="130" width="120" height="40" rx="3" class="entity-rect" />
+  <text x="400" y="150" class="entity-text">ĐV KHÁCH</text>
+
+  <!-- NGƯỜI ĐẶT -->
+  <rect x="165" y="380" width="110" height="40" rx="3" class="entity-rect" />
+  <text x="220" y="400" class="entity-text">NGƯỜI ĐẶT</text>
+
+  <!-- NGƯỜI NHẬN -->
+  <rect x="465" y="380" width="120" height="40" rx="3" class="entity-rect" />
+  <text x="525" y="400" class="entity-text">NGƯỜI NHẬN</text>
+
+  <!-- HÀNG -->
+  <rect x="170" y="580" width="100" height="40" rx="3" class="entity-rect" />
+  <text x="220" y="600" class="entity-text">HÀNG</text>
+
+  <!-- NƠI GIAO -->
+  <rect x="560" y="560" width="110" height="40" rx="3" class="entity-rect" />
+  <text x="615" y="580" class="entity-text">NƠI GIAO</text>
+
+  <!-- NGƯỜI GIAO -->
+  <rect x="375" y="640" width="120" height="40" rx="3" class="entity-rect" />
+  <text x="435" y="660" class="entity-text">NGƯỜI GIAO</text>
+
+  <!-- ================= RELATIONSHIPS (DIAMONDS) ================= -->
+  
+  <!-- Thuộc 1 -->
+  <polygon points="220,280 255,298 220,316 185,298" class="rel-diamond" />
+  <text x="220" y="298" class="rel-text">Thuộc 1</text>
+
+  <!-- Thuộc 2 -->
+  <polygon points="520,280 555,298 520,316 485,298" class="rel-diamond" />
+  <text x="520" y="298" class="rel-text">Thuộc 2</text>
+
+  <!-- Đặt -->
+  <polygon points="220,480 255,500 220,520 185,500" class="rel-diamond" />
+  <text x="220" y="500" class="rel-text">Đặt</text>
+
+  <!-- Giao -->
+  <polygon points="440,510 480,530 440,550 400,530" class="rel-diamond" />
+  <text x="440" y="530" class="rel-text">Giao</text>
+
+  <!-- ================= ATTRIBUTES (BLUE ELLIPSES) ================= -->
+  
+  <!-- ĐV KHÁCH attrs -->
+  <ellipse cx="250" cy="115" rx="42" ry="18" class="attr-ellipse-blue" />
+  <text x="250" y="115" class="attr-text-white" text-decoration="underline">Mã ĐV</text>
+
+  <ellipse cx="330" cy="55" rx="42" ry="18" class="attr-ellipse-blue" />
+  <text x="330" y="55" class="attr-text-white">Tên ĐV</text>
+
+  <ellipse cx="430" cy="70" rx="42" ry="18" class="attr-ellipse-blue" />
+  <text x="430" y="70" class="attr-text-white">Địa chỉ</text>
+
+  <ellipse cx="240" cy="225" rx="48" ry="18" class="attr-ellipse-blue" />
+  <text x="240" y="225" class="attr-text-white">Điện thoại</text>
+
+  <!-- NGƯỜI ĐẶT attrs -->
+  <ellipse cx="85" cy="355" rx="48" ry="18" class="attr-ellipse-blue" />
+  <text x="85" y="355" class="attr-text-white" text-decoration="underline">Mã số NĐ</text>
+
+  <ellipse cx="85" cy="445" rx="48" ry="18" class="attr-ellipse-blue" />
+  <text x="85" y="445" class="attr-text-white">Họ tên NĐ</text>
+
+  <!-- NGƯỜI NHẬN attrs -->
+  <ellipse cx="645" cy="340" rx="48" ry="18" class="attr-ellipse-blue" />
+  <text x="645" y="340" class="attr-text-white">Họ tên NN</text>
+
+  <ellipse cx="660" cy="415" rx="48" ry="18" class="attr-ellipse-blue" />
+  <text x="660" y="415" class="attr-text-white" text-decoration="underline">Mã số NN</text>
+
+  <!-- HÀNG attrs -->
+  <ellipse cx="110" cy="535" rx="42" ry="18" class="attr-ellipse-blue" />
+  <text x="110" y="535" class="attr-text-white" text-decoration="underline">Mã hàng</text>
+
+  <ellipse cx="95" cy="600" rx="42" ry="18" class="attr-ellipse-blue" />
+  <text x="95" y="600" class="attr-text-white">Tên hàng</text>
+
+  <ellipse cx="110" cy="660" rx="42" ry="18" class="attr-ellipse-blue" />
+  <text x="110" y="660" class="attr-text-white">Đv tính</text>
+
+  <!-- NƠI GIAO attrs -->
+  <ellipse cx="645" cy="515" rx="55" ry="18" class="attr-ellipse-blue" />
+  <text x="645" y="515" class="attr-text-white">Tên nơi giao</text>
+
+  <ellipse cx="605" cy="650" rx="55" ry="18" class="attr-ellipse-blue" />
+  <text x="605" y="650" class="attr-text-white" text-decoration="underline">Mã số ĐĐG</text>
+
+  <!-- NGƯỜI GIAO attrs -->
+  <ellipse cx="280" cy="670" rx="50" ry="18" class="attr-ellipse-blue" />
+  <text x="280" y="670" class="attr-text-white" text-decoration="underline">Mã số NG</text>
+
+  <ellipse cx="410" cy="725" rx="50" ry="18" class="attr-ellipse-blue" />
+  <text x="410" y="725" class="attr-text-white">Họ tên NG</text>
+
+  <!-- ================= RELATIONSHIP ATTRS (ORANGE ELLIPSES) ================= -->
+  
+  <!-- For ĐẶT -->
+  <ellipse cx="150" cy="500" rx="35" ry="16" class="attr-ellipse-orange" />
+  <text x="150" y="500" class="attr-text-orange">Số ĐH</text>
+
+  <ellipse cx="280" cy="470" rx="38" ry="16" class="attr-ellipse-orange" />
+  <text x="280" y="470" class="attr-text-orange">Ngày đặt</text>
+
+  <ellipse cx="280" cy="530" rx="38" ry="16" class="attr-ellipse-orange" />
+  <text x="280" y="530" class="attr-text-orange">Số lượng</text>
+
+  <!-- For GIAO -->
+  <ellipse cx="410" cy="450" rx="32" ry="16" class="attr-ellipse-orange" />
+  <text x="410" y="450" class="attr-text-orange">Số PG</text>
+
+  <ellipse cx="360" cy="480" rx="38" ry="16" class="attr-ellipse-orange" />
+  <text x="360" y="480" class="attr-text-orange">Ngày giao</text>
+
+  <ellipse cx="510" cy="495" rx="38" ry="16" class="attr-ellipse-orange" />
+  <text x="510" y="495" class="attr-text-orange">Số lượng</text>
+
+  <ellipse cx="375" cy="565" rx="36" ry="16" class="attr-ellipse-orange" />
+  <text x="375" y="565" class="attr-text-orange">Đơn giá</text>
+
+</svg>
